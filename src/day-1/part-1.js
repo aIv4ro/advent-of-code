@@ -1,4 +1,4 @@
-import {readFile} from 'node:fs/promises'
+import { readFile } from 'node:fs/promises'
 
 const path = new URL('input.txt', import.meta.url)
 const input = await readFile(path).then(res => res.toString())
